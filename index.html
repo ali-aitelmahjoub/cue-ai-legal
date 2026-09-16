@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cue AI | Your Ultimate Texting Wingman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#8b5cf6', // Primary purple
+                            600: '#7c3aed',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="max-w-6xl mx-auto w-full px-6 py-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <!-- Placeholder for your logo -->
+            <div class="w-8 h-8 bg-gradient-to-br from-brand-500 to-pink-500 rounded-lg shadow-sm flex items-center justify-center">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-gray-900">Cue AI</span>
+        </div>
+        <div class="hidden sm:flex gap-6 text-sm font-medium text-gray-500">
+            <a href="mailto:support@yourdomain.com" class="hover:text-brand-600 transition-colors">Support</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex flex-col items-center justify-center px-6 py-16 text-center">
+        <div class="inline-block mb-4 px-3 py-1 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-xs font-semibold tracking-wide uppercase">
+            Now available on iOS & Android
+        </div>
+        
+        <h1 class="max-w-3xl text-5xl sm:text-6xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight">
+            Never know <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-pink-500">what to say?</span>
+        </h1>
+        
+        <p class="max-w-xl text-lg sm:text-xl text-gray-500 mb-10 mx-auto">
+            Upload a screenshot or paste your chat. Let our AI-powered wingman craft the perfect response in seconds.
+        </p>
+
+        <!-- Download Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <!-- App Store Button -->
+            <a href="#" class="w-48 h-14 bg-black text-white rounded-xl flex items-center justify-center gap-2 hover:bg-gray-800 transition-transform hover:scale-105">
+                <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M16.365 21.43c-1.25.96-2.52 1.94-4.04 1.94-1.5 0-2.2-.97-4.14-.97-1.92 0-2.9.99-4.12.99-1.4 0-2.8-1.07-4.1-2.96-1.74-2.53-2.98-6.14-2.02-9.52.74-2.55 2.5-4.42 4.7-4.44 1.83-.02 3.16 1.25 4.7 1.25 1.5 0 3.32-1.54 5.37-1.32 2.22.25 4.02 1.34 5.08 3.1-4.22 2.56-3.4 8.7 1.07 10.5-.83 2.1-2.12 4.2-3.5 6.13-.5.7-1.02 1.4-1.5 2.06M15.225 6.6c.74-.95 1.24-2.28 1.1-3.6-1.18.06-2.6.8-3.44 1.77-.66.75-1.27 2.13-1.1 3.44 1.3.1 2.68-.65 3.44-1.6z"/></svg>
+                <div class="text-left">
+                    <div class="text-[10px] leading-none opacity-80">Download on the</div>
+                    <div class="text-sm font-semibold leading-tight">App Store</div>
+                </div>
+            </a>
+            
+            <!-- Google Play Button -->
+            <a href="#" class="w-48 h-14 bg-black text-white rounded-xl flex items-center justify-center gap-2 hover:bg-gray-800 transition-transform hover:scale-105">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5.34 0 .66.12.92.32L20.2 11.1c.48.37.78.95.78 1.57s-.3.12-.78 1.57l-14.78 8.78c-.26.2-.58.32-.92.32-.83 0-1.5-.67-1.5-1.5zm2-15.6v14.2l10.8-7.1L5 4.9z"/></svg>
+                <div class="text-left">
+                    <div class="text-[10px] leading-none opacity-80">GET IT ON</div>
+                    <div class="text-sm font-semibold leading-tight">Google Play</div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- Features Section (Minimal) -->
+    <section class="max-w-5xl mx-auto w-full px-6 py-16 mb-12">
+        <div class="grid sm:grid-cols-3 gap-8 text-center">
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">📸</div>
+                <h3 class="font-bold text-gray-900 mb-2">1. Share Context</h3>
+                <p class="text-sm text-gray-500">Upload a screenshot or paste your conversation text directly into the app.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">🧠</div>
+                <h3 class="font-bold text-gray-900 mb-2">2. AI Analysis</h3>
+                <p class="text-sm text-gray-500">Cue AI reads the room, analyzing the tone, relationship, and vibe.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">✨</div>
+                <h3 class="font-bold text-gray-900 mb-2">3. Pick Your Move</h3>
+                <p class="text-sm text-gray-500">Get three perfect, distinct reply options. Copy, send, and win the chat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-white py-8 mt-auto">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-gray-400">© 2026 Cue AI. All rights reserved.</p>
+            <div class="flex gap-6 text-sm text-gray-500">
+                <a href="privacy.html" class="hover:text-brand-600 transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-brand-600 transition-colors">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
